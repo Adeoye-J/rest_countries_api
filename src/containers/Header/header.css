@@ -1,0 +1,42 @@
+
+.header-container {
+    background-color: var(--dark-background);
+    position: fixed;
+    width: 100%;
+    padding: 2rem 4rem;
+    color: #fff;
+    z-index: 10;
+
+}
+
+.header-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-details h1 {
+    font-size: 1.5rem;
+}
+
+.dark-light-mode p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .6rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .header-container {
+        padding: 2rem 2rem;
+    }
+
+    .header-details h1 {
+        font-size: 1rem;
+    }
+
+    .dark-light-mode p {
+        font-size: .8rem;
+    }
+}
