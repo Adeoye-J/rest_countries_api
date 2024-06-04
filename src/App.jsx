@@ -14,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<AllCountries getUrl={url} />} />
+          <Route path="/rest_countries_api" element={<AllCountries getUrl={url} />} />
           <Route path="/region/Africa" element={<AllCountries getUrl={`${europeRegion}/africa`} />} />
           <Route path="/region/America" element={<AllCountries getUrl={`${europeRegion}/america`} />} />
           <Route path="/region/Asia" element={<AllCountries getUrl={`${europeRegion}/asia`} />} />
