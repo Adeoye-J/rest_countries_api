@@ -1,0 +1,46 @@
+.country-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    background-color: var(--dark-background);
+    cursor: pointer;
+}
+
+.country-container img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+}
+
+.country-details {
+    color: #fff;
+    padding: .5rem 1.5rem;
+}
+
+.country-details h1 {
+    font-size: 17px;
+    padding-block: 1rem;
+}
+
+.other-country-details {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.other-country-details p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.other-country-details p span {
+    font-weight: 100;
+}
+
+
+@media screen and (max-width:1200px) {
+    .other-country-details {
+        margin-bottom: 0rem;
+    }
+    
+}

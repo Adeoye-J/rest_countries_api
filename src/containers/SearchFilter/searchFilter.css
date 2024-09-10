@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: -1;
 }
 
 .search-filter-container input {
@@ -85,10 +86,34 @@
         align-content: space-between;
         gap: 1rem;
         align-items: flex-start;
+        /* padding-inline:2rem; */
     }
 
     .search-icon {
         top: 163px;
     }
+
+    /* .search-filter-container input{
+        width: 220px;
+    } */
 }
 
+@media screen and (max-width:600px) {
+    .search-filter-container input{
+        width: 300px;
+    }
+
+    .search-filter-container {
+        padding-inline: 2rem;
+    }
+
+    .search-icon {
+        left: 50px;
+    } 
+}
+
+@media screen and (max-width:320px) {
+    .search-filter-container input {
+        width: 280px;
+    }
+}

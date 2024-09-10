@@ -2,12 +2,13 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AllCountries from './components/AllCountries/AllCountries'
 import EachCountry from './components/EachCountry/EachCountry';
+import CountryDetails from './components/CountryDetails/CountryDetails';
 // import Practice from './Practice';
 
 function App() {  
 
   const url = "https://restcountries.com/v3.1/all";
-  const europeRegion = "https://restcountries.com/v3.1/region/"
+  const europeRegion = "https://restcountries.com/v3.1/region"
 
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
           <Route path="/region/Asia" element={<AllCountries getUrl={`${europeRegion}/asia`} />} />
           <Route path="/region/Europe" element={<AllCountries getUrl={`${europeRegion}/europe`} />} />
           <Route path="/region/Oceania" element={<AllCountries getUrl={`${europeRegion}/oceania`} />} />
-          <Route path="/countries/:name" element={<EachCountry />} />
+          <Route path="/countries/:name" element={<CountryDetails />} />
         </Routes>
       </BrowserRouter>
     </>
